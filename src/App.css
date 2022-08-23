@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+/* ESTILOS CSS INCORPORADOS */
+.container{
+  color: #f79576;
+}
+
+.navBar{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  background-color: #e1fce2;
+  
+}
+
+.navEnlace{
+  margin: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: #7dafa6;
+}
+
+.navEnlace:hover{
+  background-color: #f79576;
+  border-radius: 10px;
+  color: white;
+}
+
+.img{
+  padding: 30px;
+}
+
+.icon{
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
