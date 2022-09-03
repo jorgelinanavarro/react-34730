@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className='navBar'>
         <img src="./nubeLogo.png" alt="logo" className='img'/>
         <a href='#' className='navEnlace'>Inicio</a>
-        <a href='#' className='navEnlace'>Cursos</a>
+        <a href='#' className='navEnlace'>Productos</a>
         <a href='#' className='navEnlace'>Sobre Mi</a>
         <a href='#' className='navEnlace'>Contacto</a>
         <CartWidget/>

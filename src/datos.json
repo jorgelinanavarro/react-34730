@@ -1,0 +1,14 @@
+[
+    {"id":"1", "name":"Bolsitas Infantiles", "price":"$1500", "image": "src:./public/bolsitas-infantiles.jpg"},
+    {"id":"2", "name":"Cake Topper", "price":"$800"},
+    {"id":"3", "name":"Cuaderno Rayado", "price":"$400"},
+    {"id":"4", "name":"Flores de Papel", "price":"$100"},
+    {"id":"5", "name":"Letras 3D", "price":"$500"},
+    {"id":"6", "name":"Pinata Infantil", "price":"$3200"},
+    {"id":"7", "name":"Polaroid", "price":"$600"},
+    {"id":"8", "name":"Stickers", "price":"$500"},
+    {"id":"9", "name":"Tarjetas Opalina", "price":"$1000"},
+    {"id":"10", "name":"Tarjetas Foil", "price":"$1800"},
+    {"id":"11", "name":"Tarjetas Hologramadas", "price":"$1800"},
+    {"id":"12", "name":"Vouchers", "price":"$2200"}
+]

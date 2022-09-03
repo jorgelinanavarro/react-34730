@@ -1,14 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
 
 
-function App() {
+
+
+function App() { 
+
   return (
     <div className='container'>
       <NavBar/>
-      <ItemListContainer greeting={'Bienvenidos a este mundo magico'}/>
+      <ItemCount/>
+      <ItemListContainer greeting={'Bienvenidos a nuestra tienda online'}/>
     </div>
   );
 }
