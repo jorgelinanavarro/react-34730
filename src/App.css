@@ -72,3 +72,8 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.cards{
+  padding: 20px;
+ 
+}

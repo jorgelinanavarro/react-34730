@@ -1,12 +1,15 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
-const Item = ({name, price, image}) => {
+const Item = ({ title, img, price}) => {
   return (
-    <div>
-        <h1>{name}</h1>
-        <h3>{price}</h3>
-        <img src={image} alt="" />
-    </div>
+    <article className='cards'>
+      <h3>{title}</h3>
+      <h3>{price}</h3>
+
+      <img src={img} alt="" style={{width: "15rem"}} />
+      <ItemCount/>
+    </article>
   )
 }
 

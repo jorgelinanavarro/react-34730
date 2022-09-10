@@ -1,14 +1,14 @@
 [
-    {"id":"1", "name":"Bolsitas Infantiles", "price":"$1500", "image": "src:./public/bolsitas-infantiles.jpg"},
-    {"id":"2", "name":"Cake Topper", "price":"$800"},
-    {"id":"3", "name":"Cuaderno Rayado", "price":"$400"},
-    {"id":"4", "name":"Flores de Papel", "price":"$100"},
-    {"id":"5", "name":"Letras 3D", "price":"$500"},
-    {"id":"6", "name":"Pinata Infantil", "price":"$3200"},
-    {"id":"7", "name":"Polaroid", "price":"$600"},
-    {"id":"8", "name":"Stickers", "price":"$500"},
-    {"id":"9", "name":"Tarjetas Opalina", "price":"$1000"},
-    {"id":"10", "name":"Tarjetas Foil", "price":"$1800"},
-    {"id":"11", "name":"Tarjetas Hologramadas", "price":"$1800"},
-    {"id":"12", "name":"Vouchers", "price":"$2200"}
+    {"id":"1", "title":"Bolsitas Infantiles", "price":"$1500", "img": "./bolsitas-infantiles.jpg"},
+    {"id":"2", "title":"Cake Topper", "price":"$800","img": "./cake-topper.jpg"},
+    {"id":"3", "title":"Cuaderno Rayado", "price":"$400","img": "./cuaderno-personalizado.jpg"},
+    {"id":"4", "title":"Flores de Papel", "price":"$100","img": "./flores-papel.jpg"},
+    {"id":"5", "title":"Letras 3D", "price":"$500","img": "./letras-3d.jpg"},
+    {"id":"6", "title":"Pinata Infantil", "price":"$3200","img": "./pinata-infantil.jpg"},
+    {"id":"7", "title":"Polaroid", "price":"$600","img": "./polaroid.jpg"},
+    {"id":"8", "title":"Stickers", "price":"$500","img": "./stickers.jpg"},
+    {"id":"9", "title":"Tarjetas Opalina", "price":"$1000","img": "./tags-comun.jpg"},
+    {"id":"10", "title":"Tarjetas Foil", "price":"$1800","img": "./tags-foil.jpg"},
+    {"id":"11", "title":"Tarjetas Hologramadas", "price":"$1800","img": "./tags-hologramada.jpg"},
+    {"id":"12", "title":"Vouchers", "price":"$2200","img": "./voucher.jpg"}
 ]
