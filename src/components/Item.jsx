@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import ItemCount from './ItemCount'
+import { CartContext } from '../context/CartContext'
+
+
 
 
 
 const Item = ({ title, img, price, description}) => {
+  const nombre = useContext(CartContext);
+
+  
+
   return (
     <article className='cards'>
       <h3>{title}</h3>
@@ -12,7 +20,7 @@ const Item = ({ title, img, price, description}) => {
       <h4>{description}</h4>
       <ItemCount/>
       <div>
-        <button>Ver descripción</button>
+        <button><Link to={'/detalle/detalleId'}>Ver descripcion</Link></button>
       </div>
       
     </article>

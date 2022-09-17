@@ -1,31 +1,30 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import ItemDetail from "./ItemDetail"
-import products from "./ProductsData"
+import ItemDetail from "./ItemDetail";
+import products from "./ProductsData";
+
+
 
 const ItemDetailContainer = () => {
 
-    const [item, setItem] = useState({});
-     const { id } = useParams()
+    const [data, setData] = useState({});
+    const { detalleId } = useParams();
+
+     
 
     useEffect(() => {
-      getItem().then(data => {
-        setItem(data)
-      })
+      const getData = new Promise(resolve => {
+        setTimeout(() => {
+          resolve(products);
+        }, 3000);
+      });
+      getData.then(res => setData(res.find(product => product.id === parseInt(detalleId))));
     }, [])
     
-    const getItem = () => {
-        return new Promise(resolve => {
-            setTimeout(() => {
-                resolve(products.find(p => p.id == id))
-            }, 2000);
-            
-        })
-    }
 
 
   return (
-    <div><ItemDetail/></div>
+    <div><ItemDetail data={data}/></div>
   )
 }
 

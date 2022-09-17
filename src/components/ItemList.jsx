@@ -6,8 +6,7 @@ const ItemList = ({products}) => {
     <div>
       {products.length ? products.map((product) => <Item key={product.id} {...product}/>) : <h2>Cargando....</h2>}
     </div>
-    
-  )
+    )
 }
 
 export default ItemList
