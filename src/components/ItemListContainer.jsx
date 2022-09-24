@@ -1,29 +1,16 @@
 
 import React, { useEffect, useState } from 'react'
-import productsJson from "../datos.json"
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import ItemList from './ItemList';
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
 
-  const getProducts = (data,time) => 
-    new Promise((resolve, reject) => {
-     setTimeout(() => {
-      if(data){
-        resolve(data);
-      }else{
-        reject("Error");
-      }
-     },time)
-    
-  });
-
   useEffect(() => {
-    getProducts(productsJson, 3000)
-    .then((resolve)=>{
-      setProducts(resolve)
-    })
-    .catch((err)=>console.log(err, "no hay productos"))
+    const querydb = getFirestore();
+    const queryCollection = collection(querydb,'products');
+    getDocs(queryCollection)
+        .then(res => setProducts(res.docs.map(product => ({id: product.id, ...product.data()}))));
   }, []);
 
 
