@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import ItemCount from './ItemCount'
-import { CartContext } from '../context/CartContext'
+import { useCartContext} from '../context/CartContext';
 
 
 
 
 
 const Item = ({ title, img, price, description}) => {
-  const nombre = useContext(CartContext);
+  const nombre = useContext(useCartContext);
 
   
 
@@ -16,7 +16,7 @@ const Item = ({ title, img, price, description}) => {
     <article className='cards'>
       <h3>{title}</h3>
       <h3>{price}</h3>
-      <img src={img} alt="" style={{width: "15rem"}} />
+      <img src='' alt="" style={{width: "15rem"}} />
       <h4>{description}</h4>
       <ItemCount/>
       <div>
